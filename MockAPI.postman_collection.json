@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "793e6e6a-fbc6-495f-a6b1-d9edcd04998a",
+		"name": "MockAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createFakeAPI",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"https://raw.githubusercontent.com/prakashdilli/mock-api/main/db.json\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8ba0-49-204-126-79.in.ngrok.io/createFakeAPI",
+					"protocol": "https",
+					"host": [
+						"8ba0-49-204-126-79",
+						"in",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"createFakeAPI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"url\":\"https://raw.githubusercontent.com/prakashdilli/mock-api/main/db.json\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8ba0-49-204-126-79.in.ngrok.io/prakashdilli",
+					"protocol": "https",
+					"host": [
+						"8ba0-49-204-126-79",
+						"in",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"prakashdilli"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 5,\r\n    \"title\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8ba0-49-204-126-79.in.ngrok.io/prakashdilli/posts",
+					"protocol": "https",
+					"host": [
+						"8ba0-49-204-126-79",
+						"in",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"prakashdilli",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"id\": 5,\r\n    \"title\": \"updated 13434\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8ba0-49-204-126-79.in.ngrok.io/prakashdilli/posts/5",
+					"protocol": "https",
+					"host": [
+						"8ba0-49-204-126-79",
+						"in",
+						"ngrok",
+						"io"
+					],
+					"path": [
+						"prakashdilli",
+						"posts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteData",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/prakashdilli/posts/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"prakashdilli",
+						"posts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
