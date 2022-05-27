@@ -1,0 +1,13 @@
+## Starting the Mock API server
+git clone main branch
+cd projectFolder
+npm i
+npm i -g pm2
+pm2 start index.js
+
+## For API doc use Postman collection (MockApi.postman_collection.json)
+
+## NGROK Setup
+Install NGROK client based on the OS
+ngrok config add-authtoken XXXXXXXXXXXXXXXXXXX
+ngrok http 3000
